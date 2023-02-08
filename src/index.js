@@ -41,7 +41,7 @@ newRamen.addEventListener("submit", (e) => {
     restaurant: e.target.restaurant.value,
     image: e.target.image.value,
     rating: e.target.rating.value,
-    new_comment: e.target.new_comment.value,
+    comment: e.target.new_comment.value,
   };
   renderRamen(ramenValues);
 });
