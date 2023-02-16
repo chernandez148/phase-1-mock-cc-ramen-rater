@@ -23,6 +23,14 @@ renderRamen = (ramenImg) => {
     const imgRamen = document.createElement("img");
     ramenDetail.innerHTML = "";
 
+    fetch(ramenData, {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: bookList.users,
+    });
+
     imgRamen.src = ramenImg.image;
     h2.textContent = ramenImg.name;
     h3.textContent = ramenImg.restaurant;
